@@ -49,3 +49,11 @@ for (let i = 1; i <= 100; i+=2) {
     Sum +=i
 }
 console.log("The sum of all numbers from 0 to 100 is:", Sum);
+
+// Number of lines in the pattern
+const numberOfLines = 7;
+
+// Loop to create the pattern
+for (let i = 1; i <= numberOfLines; i++) {
+    console.log('#'.repeat(i));
+}

@@ -1,3 +1,10 @@
+// Check if type of '10' is equal to 10
+const typeOfString = typeof '10';
+const isEqual = typeOfString === 10;
+
+console.log(`Type of '10' is equal to 10: ${isEqual}`);
+
+
 // Declare firstName, lastName, country, city, age, 
 // isMarried, year variable and assign value to it and 
 const firstName = "Olaide";
@@ -81,20 +88,6 @@ console.log(now.getTime())
 const miliseconds = Date.now()
 console.log(miliseconds)
 
-// let base;
-// let height;
-// let area = prompt(0.5 * base * height)
-// let base = prompt("Enter the base of the triangle");
-// console.log(base)
-// let height = prompt("Enter the height of the triangle ");
-// console.log(height)
-// let area = prompt("Enter the area of the triangle");
-// console.log(0.5 * base * height)
-
-
-// let age = [Ayomide]
-// age.length > 7 ? "Your name is long" : "Your name is short"
-// console.log(age)
 
 
 
@@ -116,7 +109,48 @@ console.log(`${day}-${month}-${Year} ${hours}:${minutes}`)
 // DD/MM/YYYY HH:mm
 console.log(`${day}/${month}/${Year} ${hours}:${minutes}`)
 
+// Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
 
+// Prompt user for base and height
+const base = parseFloat(prompt("Enter base:"));
+const height = parseFloat(prompt("Enter height:"));
+
+// Calculate the area of the triangle
+const area = 0.5 * base * height;
+
+// Display the result
+console.log(`The area of the triangle is ${area}`);
+
+// Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
+
+// Prompt user for the lengths of the sides
+const sideA = parseFloat(prompt("Enter side a:"));
+const sideB = parseFloat(prompt("Enter side b:"));
+const sideC = parseFloat(prompt("Enter side c:"));
+
+// Calculate the perimeter of the triangle
+const perimeter = sideA + sideB + sideC;
+
+// Display the result
+console.log(`The perimeter of the triangle is ${perimeter}`);
+
+
+// Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
+const length = parseFloat(prompt("Enter length:"));
+const width = parseFloat(prompt("Enter width:"));
+const totalArea = length * width
+const perRectangle = 2 *(length + width)
+console.log(totalArea)
+console.log(perRectangle)
+
+// If the length of your name is greater than 7 say, your name is long else say your name is short.
+let myName = "Sumayyah"
+
+if(myName.length > 7){
+    console.log("Your name is long")
+} else {
+    console.log("Your name is short")
+}
 // Create a human readable time format using the Date time object. 
 // The hour and the minute should be all the time two digits
 // (7 hours should be 07 and 5 minutes should be 05 )
